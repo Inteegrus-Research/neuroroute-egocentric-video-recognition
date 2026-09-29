@@ -1,0 +1,22 @@
+
+\begin{table}[t]
+\centering
+\caption{Neural-control and deployment audit. The controls test whether the
+observed routing behavior depends on a meaningful visual--EEG relationship.}
+\label{tab:controls}
+\begin{tabular}{ll}
+\toprule
+Condition / audit & Outcome\\
+\midrule
+Random EEG & Control completed\\
+Wrong-subject EEG & Control completed\\
+Temporally shifted EEG & Control completed\\
+No neural supervision & Control completed\\
+EEG required at inference & No\\
+EEG preprocessing required at inference & No\\
+EEG encoder required at inference & No\\
+Subject-level paired bootstrap CI excludes zero & No\\
+Final scientific gate & Inconclusive\\
+\bottomrule
+\end{tabular}
+\end{table}

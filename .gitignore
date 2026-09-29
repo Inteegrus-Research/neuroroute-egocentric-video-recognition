@@ -1,0 +1,64 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Large / generated data
+*.pt
+*.pth
+*.npy
+*.npz
+*.zip
+*.edf
+*.mp4
+*.md.edf
+
+# Local data / Kaggle outputs
+data/
+kaggle/
+working/
+outputs/
+artifacts/*
+!artifacts/.gitkeep
+
+# Secrets
+.env
+*.token
+
+# ------------------------------------------------------------------
+# Large derived/intermediate research data
+# ------------------------------------------------------------------
+
+processed/
+data/
+datasets/
+
+# Per-subject feature tensors
+artifacts/**/*.pt
+artifacts/**/*.pth
+artifacts/**/*.ckpt
+
+# NumPy feature/intermediate blobs
+artifacts/**/*.npy
+
+# Intermediate teacher caches
+artifacts/neuroroute/teacher_cache/
+
+# Archives / generated bundles
+*.zip
+
+# Python environments
+venv/
+.venv/
+
+# Jupyter runtime
+.ipynb_checkpoints/
+
+# OS/editor noise
+.DS_Store
+*.swp
+*.swo

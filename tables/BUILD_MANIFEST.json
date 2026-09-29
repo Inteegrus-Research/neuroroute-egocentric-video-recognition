@@ -1,0 +1,27 @@
+{
+  "builder": "build_paper_artifacts.py",
+  "purpose": "Generate LaTeX-compatible paper tables from frozen results",
+  "source_directories": {
+    "alignment": "artifacts/alignment",
+    "vision_benchmark": "artifacts/vision_benchmark",
+    "eeg_teacher": "artifacts/eeg_teacher",
+    "neuroroute": "artifacts/neuroroute"
+  },
+  "generated_tables": [
+    "table01_dataset_and_split.tex",
+    "table02_visual_baselines.tex",
+    "table03_eeg_teacher.tex",
+    "table04_compute_budget.tex",
+    "table05_temporal_robustness.tex",
+    "table06_controls_and_deployment.tex",
+    "table07_full_robustness.tex"
+  ],
+  "latex_requirements": [
+    "booktabs",
+    "graphicx",
+    "newtxtext",
+    "newtxmath",
+    "llncs"
+  ],
+  "scientific_note": "The final NeuroRoute scientific gate is INCONCLUSIVE. The manuscript must not claim recognition or robustness improvement."
+}

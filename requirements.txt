@@ -1,0 +1,10 @@
+numpy
+pandas
+scipy
+scikit-learn
+matplotlib
+mne
+huggingface_hub
+torch
+torchvision
+tabulate

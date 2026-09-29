@@ -1,0 +1,17 @@
+\begin{table}[t]
+\centering
+\caption{Temporal compute budget sweep and estimated temporal FLOP reduction.}
+\label{tab:compute_budget}
+\begin{tabular}{lrrrr}
+\toprule
+Budget & Tokens & Temporal FLOPs & FLOP reduction & Latency (ms) \\
+\midrule
+100.0\textbackslash{}% & 8 & 35927552 & 0.0000 & 1.8765 \\
+75.0\textbackslash{}% & 6 & 26899968 & 0.2513 & 1.9064 \\
+50.0\textbackslash{}% & 4 & 17905152 & 0.5016 & 1.6867 \\
+25.0\textbackslash{}% & 2 & 8943104 & 0.7511 & 1.6805 \\
+12.5\textbackslash{}% & 1 & 4474368 & 0.8755 & 1.8875 \\
+\bottomrule
+\end{tabular}
+\par\smallskip\noindent\footnotesize\textit{Note.} At the predefined 50\textbackslash{}% budget, temporal computation decreases from 35,927,552 to 17,905,152 FLOPs/sample (50.16\textbackslash{}% reduction).
+\end{table}

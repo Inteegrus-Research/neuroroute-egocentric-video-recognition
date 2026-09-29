@@ -1,0 +1,47 @@
+{
+  "dataset": {
+    "subjects": 40,
+    "synchronized_rows": 227864,
+    "retained_classes": 29,
+    "semantic_classes": 27,
+    "split": {
+      "train": 31147,
+      "val": 38404,
+      "test": 46178
+    },
+    "subject_split": {
+      "train": 24,
+      "val": 8,
+      "test": 8
+    }
+  },
+  "chance_macro_f1": 0.037037037037037035,
+  "eeg_teacher_latest": {
+    "selected_candidate": "temporal_transformer",
+    "val_macro_f1": 0.04119713639533642,
+    "test_macro_f1": 0.03887558016322673,
+    "temporal_shuffle_macro_f1_drop": 0.0008800994619789018,
+    "importance_normalized_entropy": 0.9997776749874,
+    "subject_macro_f1_mean": 0.0370335960738446
+  },
+  "neuroroute_completed_run": {
+    "primary_budget": 0.5,
+    "phase2_clean_macro_f1": 0.037528,
+    "neuroroute_clean_macro_f1": 0.034828,
+    "phase2_mean_corruption_macro_f1": 0.035298,
+    "neuroroute_mean_corruption_macro_f1": 0.032933,
+    "robustness_gain": -0.002365,
+    "dense_temporal_flops": 35927552,
+    "primary_temporal_flops": 17905152,
+    "primary_flop_reduction": 0.5016,
+    "eeg_required": false,
+    "eeg_preprocessing_required": false,
+    "eeg_encoder_required": false,
+    "subject_macro_f1_delta_mean": 9.3788e-05,
+    "bootstrap_ci95": [
+      -0.0102269,
+      0.0123641
+    ],
+    "final_gate": "INCONCLUSIVE"
+  }
+}

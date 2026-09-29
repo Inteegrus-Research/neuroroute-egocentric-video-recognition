@@ -1,0 +1,21 @@
+
+\begin{table}[t]
+\centering
+\caption{Standalone EEG teacher diagnostics on the frozen subject-independent
+27-class task. The temporal shuffle test measures sensitivity to token order;
+the near-uniform importance entropy indicates weak temporal concentration.}
+\label{tab:eeg_teacher}
+\begin{tabular}{lr}
+\toprule
+Metric & Temporal Transformer EEG teacher\\
+\midrule
+Validation macro-F1 & 0.00714\\
+Test macro-F1 & 0.00592\\
+Chance macro-F1 & 0.03704\\
+Test macro-F1 after temporal shuffle & 0.03800\\
+Macro-F1 drop after temporal shuffle & 0.00088\\
+Normalized importance entropy & 0.99978\\
+Mean subject macro-F1 & 0.03703\\
+\bottomrule
+\end{tabular}
+\end{table}

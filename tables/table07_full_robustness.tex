@@ -1,0 +1,19 @@
+
+\begin{table*}[t]
+\centering
+\caption{Full NeuroRoute temporal-corruption robustness at the 50\% temporal
+budget. Values are macro-F1 at increasing corruption severity.}
+\label{tab:full_robustness}
+\begin{tabular}{lrrrrr}
+\toprule
+Corruption & 5\% & 15\% & 30\% & 50\% & 70\%\\
+\midrule
+Random frame drop & 0.03424 & 0.03429 & 0.03354 & 0.02882 & 0.02347 \\
+Burst deletion & 0.03398 & 0.03445 & 0.03321 & 0.02435 & 0.02204 \\
+Temporal jitter & 0.03580 & 0.03561 & 0.03603 & 0.03532 & 0.03599 \\
+Irregular sampling & 0.03472 & 0.03522 & 0.03578 & 0.03521 & 0.03550 \\
+Playback speed change & 0.03461 & 0.03528 & 0.03510 & 0.03588 & 0.03563 \\
+Contiguous blackout & 0.03426 & 0.03548 & 0.03390 & 0.02540 & 0.02488 \\
+\bottomrule
+\end{tabular}
+\end{table*}

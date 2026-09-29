@@ -1,0 +1,52 @@
+{
+  "dataset": {
+    "subjects": 40,
+    "synchronized_rows": 227864,
+    "semantic_classes": 27,
+    "train_subjects": 24,
+    "val_subjects": 8,
+    "test_subjects": 8,
+    "train_sequences": 31147,
+    "val_sequences": 38404,
+    "test_sequences": 46178
+  },
+  "phase2_visual": {
+    "accuracy": 0.0514314175581445,
+    "balanced_accuracy": 0.0397342741639828,
+    "macro_f1": 0.0375711273849615,
+    "weighted_f1": 0.0491698145188679
+  },
+  "chance_macro_f1": 0.037037037037037035,
+  "eeg_teacher": {
+    "selected_candidate": "temporal_transformer",
+    "val_macro_f1": 0.041197,
+    "test_macro_f1": 0.03887558016322673,
+    "token_probe_macro_f1": 0.03928284303491306,
+    "temporal_shuffle_macro_f1_drop": 0.0008800994619789018,
+    "importance_normalized_entropy": 0.9997776749874,
+    "adjacent_cosine_mean": 0.9954484105110168,
+    "subject_macro_f1_mean": 0.0370335960738446,
+    "subject_macro_f1_std": 0.017245282006824843
+  },
+  "neuroroute": {
+    "clean_macro_f1": 0.034828474673674364,
+    "mean_corruption_macro_f1": 0.032933255445325195,
+    "robustness_gain": -0.0023647151555986207,
+    "dense_temporal_flops": 35927552,
+    "primary_temporal_flops": 17905152,
+    "flop_reduction": 0.501631728206809,
+    "primary_budget": 0.5,
+    "primary_tokens": 4,
+    "eeg_required": false,
+    "eeg_preprocessing_required": false,
+    "eeg_encoder_required": false,
+    "gate_status": "INCONCLUSIVE"
+  },
+  "subject_bootstrap": {
+    "subjects": 8,
+    "mean_subject_macro_f1_delta": 9.378772671822088e-05,
+    "bootstrap_ci95_low": -0.010226892486222583,
+    "bootstrap_ci95_high": 0.012364108792201553,
+    "ci_excludes_zero": false
+  }
+}

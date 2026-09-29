@@ -1,0 +1,15 @@
+\begin{table}[t]
+\centering
+\caption{Standalone EEG temporal-teacher performance; selected by validation macro-F1 (temporal\textbackslash{}_transformer).}
+\label{tab:eeg_teacher}
+\begin{tabular}{lrrrr}
+\toprule
+Split & Accuracy & Balanced Acc. & Macro-F1 & Weighted F1 \\
+\midrule
+train & 0.0742 & 0.0370 & 0.0051 & 0.0102 \\
+val & 0.1066 & 0.0370 & 0.0071 & 0.0205 \\
+test & 0.0869 & 0.0370 & 0.0059 & 0.0139 \\
+\bottomrule
+\end{tabular}
+\par\smallskip\noindent\footnotesize\textit{Note.} Chance macro-F1 = 0.03704; temporal-shuffle macro-F1 drop = 0.00088; normalized importance entropy = 0.99978.
+\end{table}

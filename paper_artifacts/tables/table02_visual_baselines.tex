@@ -1,0 +1,18 @@
+\begin{table}[t]
+\centering
+\caption{Clean test performance of the frozen video-only baseline ladder.}
+\label{tab:vision_baselines}
+\begin{tabular}{lrrrrrrr}
+\toprule
+Model & Accuracy & Balanced Acc. & Macro-F1 & Weighted F1 & Params & FLOPs/sample & Latency (ms) \\
+\midrule
+Mean pool & 0.0314 & 0.0288 & 0.0252 & 0.0289 & 13851 & 31744 & 0.0003 \\
+Max pool & 0.0405 & 0.0331 & 0.0323 & 0.0388 & 13851 & 31744 & 0.0004 \\
+Mean + max & 0.0398 & 0.0350 & 0.0307 & 0.0359 & 27675 & 63488 & 0.0006 \\
+Temporal conv & 0.0391 & 0.0359 & 0.0317 & 0.0378 & 326043 & 5122176 & 0.0055 \\
+Temporal Transformer & 0.0514 & 0.0397 & 0.0376 & 0.0492 & 2247195 & 35927552 & 0.0287 \\
+Masked Transformer & 0.0382 & 0.0310 & 0.0296 & 0.0358 & 2247195 & 35927552 & 0.0286 \\
+\bottomrule
+\end{tabular}
+\par\smallskip\noindent\footnotesize\textit{Note.} The primary downstream visual backbone is the Temporal Transformer. Chance macro-F1 for 27 classes is 0.03704.
+\end{table}

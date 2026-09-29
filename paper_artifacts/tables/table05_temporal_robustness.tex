@@ -1,0 +1,19 @@
+\begin{table}[t]
+\centering
+\caption{Temporal-corruption robustness comparison for the dense visual baseline and 50\textbackslash{}% NeuroRoute deployment.}
+\label{tab:robustness}
+\begin{tabular}{lrrr}
+\toprule
+Corruption & Phase-2 F1 & NeuroRoute F1 & Δ F1 \\
+\midrule
+burst deletion & 0.0318 & 0.0243 & -0.0074 \\
+contiguous blackout & 0.0360 & 0.0254 & -0.0106 \\
+irregular sampling & 0.0375 & 0.0352 & -0.0022 \\
+playback speed change & 0.0371 & 0.0359 & -0.0012 \\
+random frame drop & 0.0302 & 0.0288 & -0.0014 \\
+temporal jitter & 0.0379 & 0.0353 & -0.0026 \\
+Mean over all severities & 0.0353 & 0.0329 & -0.0024 \\
+\bottomrule
+\end{tabular}
+\par\smallskip\noindent\footnotesize\textit{Note.} Negative values indicate lower NeuroRoute macro-F1 than the dense Phase-2 reference; the complete severity matrix is supplied as CSV and illustrated in Fig. 6.
+\end{table}

@@ -1,0 +1,6 @@
+| Split          |   Subjects | Sequences                 |
+|:---------------|-----------:|:--------------------------|
+| Train          |         24 | 31147                     |
+| Val            |          8 | 38404                     |
+| Test           |          8 | 46178                     |
+| Total / source |         40 | 227,864 synchronized rows |

@@ -1,0 +1,19 @@
+\begin{table}[t]
+\centering
+\caption{Neural negative controls and EEG-free deployment audit.}
+\label{tab:controls}
+\begin{tabular}{lrl}
+\toprule
+Condition & Clean macro-F1 & Meaningful neural supervision \\
+\midrule
+Phase-2 dense visual & 0.0376 & No \\
+NeuroRoute 50\textbackslash{}% & 0.0348 & Yes (training) \\
+random eeg & 0.0370 & Control \\
+wrong subject eeg & 0.0353 & Control \\
+shifted eeg & 0.0344 & Control \\
+no neural supervision & 0.0401 & Control \\
+Deployment requirement & EEG-free & No EEG preprocessing / encoder \\
+\bottomrule
+\end{tabular}
+\par\smallskip\noindent\footnotesize\textit{Note.} The completed NeuroRoute gate was INCONCLUSIVE: compute reduction and EEG-free deployment were established, whereas recognition preservation, robustness improvement, and a control-dependent neural effect were not.
+\end{table}
